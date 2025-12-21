@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anfrage – DR Service</title>
+  <meta name="description" content="Anfrage – klar, einfach, schnell. DR Service Gebäudereinigung." />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/form.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Zum Inhalt springen</a>
+
+  <header class="site-header" data-elevate>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Zur Startseite">
+        <img class="brand-logo" src="assets/brand/logo.png" alt="DR Service" />
+        <span class="brand-text">
+          <span class="brand-name">DR Service</span>
+          <span class="brand-sub">Gebäudereinigung</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Hauptnavigation">
+        <a class="nav-link" href="index.html">Start</a>
+        <a class="nav-link" href="services.html">Leistungen</a>
+        <a class="nav-link is-active" href="anfrage.html">Anfrage</a>
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+        <a class="nav-cta" href="anfrage.html">Jetzt anfragen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-card reveal">
+          <h1 class="h1">Wir fangen etwas Neues an. Gehst du mit uns?</h1>
+          <p class="lead">Kurze Anfrage – wir melden uns zeitnah zurück.</p>
+          <div class="hero-actions">
+            <a class="btn btn-ghost" href="services.html">Leistungen ansehen</a>
+            <a class="btn" href="#formular">Zum Formular</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formular" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="h2">Anfrage</h2>
+          <p class="muted">Wähle den Bereich – danach erscheinen die passenden Felder.</p>
+        </div>
+
+        <div class="form-layout">
+          <!-- FORM -->
+          <div class="form-card reveal">
+            <form id="dr-anfrage-form" novalidate>
+              <input type="hidden" name="source" value="website-anfrage" />
+
+              <!-- 1) SERVICE -->
+              <fieldset class="fieldset">
+                <legend class="legend">1) Bereich auswählen</legend>
+
+                <div class="choice-grid">
+                  <label class="choice">
+                    <input type="radio" name="bereich" value="Treppenhaus" required />
+                    <span class="choice-body">
+                      <span class="choice-title">Treppenhaus</span>
+                      <span class="choice-sub">Etagen inkl. EG (Parter)</span>
+                    </span>
+                  </label>
+
+                  <label class="choice">
+                    <input type="radio" name="bereich" value="Restaurant" />
+                    <span class="choice-body">
+                      <span class="choice-title">Restaurant</span>
+                      <span class="choice-sub">Gastraum, WC, ggf. Küche</span>
+                    </span>
+                  </label>
+
+                  <label class="choice">
+                    <input type="radio" name="bereich" value="Fitness" />
+                    <span class="choice-body">
+                      <span class="choice-title">Fitness</span>
+                      <span class="choice-sub">inkl. Sauna (wenn vorhanden)</span>
+                    </span>
+                  </label>
+
+                  <label class="choice">
+                    <input type="radio" name="bereich" value="Büro" />
+                    <span class="choice-body">
+                      <span class="choice-title">Büro</span>
+                      <span class="choice-sub">Räume, WC, Teeküche</span>
+                    </span>
+                  </label>
+
+                  <label class="choice">
+                    <input type="radio" name="bereich" value="Schule" />
+                    <span class="choice-body">
+                      <span class="choice-title">Schule</span>
+                      <span class="choice-sub">Hol + Klassen (klein/mittel/groß)</span>
+                    </span>
+                  </label>
+
+                  <label class="choice">
+                    <input type="radio" name="bereich" value="Kindergarten" />
+                    <span class="choice-body">
+                      <span class="choice-title">Kindergarten</span>
+                      <span class="choice-sub">Gruppenräume, Sanitär</span>
+                    </span>
+                  </label>
+
+                  <label class="choice">
+                    <input type="radio" name="bereich" value="Sozialräume (Halle)" />
+                    <span class="choice-body">
+                      <span class="choice-title">Sozialräume (Halle)</span>
+                      <span class="choice-sub">Pausenraum, WC, Büro, Flur</span>
+                    </span>
+                  </label>
+
+                  <label class="choice">
+                    <input type="radio" name="bereich" value="PC & Laptop" />
+                    <span class="choice-body">
+                      <span class="choice-title">PC & Laptop</span>
+                      <span class="choice-sub">Reinigung & Wartung (ohne Konsolen)</span>
+                    </span>
+                  </label>
+                </div>
+
+                <p class="hint">Nach der Auswahl erscheinen Details (Mengen + Häufigkeit).</p>
+              </fieldset>
+
+              <!-- 2) DETAILS -->
+              <fieldset class="fieldset">
+                <legend class="legend">2) Details zur Leistung</legend>
+
+                <div class="service-details">
+                  <!-- EMPTY -->
+                  <div class="service-empty" data-service-empty>
+                    <p class="muted">Bitte oben zuerst einen Bereich auswählen.</p>
+                  </div>
+
+                  <!-- TREPPENHAUS -->
+                  <div class="service-panel" data-service="Treppenhaus" hidden>
+                    <div class="panel-head">
+                      <h3 class="h3">Treppenhaus – Details</h3>
+                      <p class="muted small">Etagen zählen <b>inkl. EG</b> (Parter), weil dort meist am meisten ist.</p>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="th_etagen">Etagen inkl. EG</label>
+                        <input id="th_etagen" name="treppenhaus_etagen_inkl_eg" type="number" min="1" placeholder="z. B. 4" />
+                      </div>
+
+                      <div class="field">
+                        <label for="th_eingaenge">Treppenhäuser / Eingänge</label>
+                        <input id="th_eingaenge" name="treppenhaus_eingaenge" type="number" min="1" placeholder="z. B. 1" />
+                      </div>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="th_fenster">Fenster im Treppenhaus</label>
+                        <input id="th_fenster" name="treppenhaus_fenster_anzahl" type="number" min="0" placeholder="z. B. 6" />
+                      </div>
+
+                      <div class="field">
+                        <label for="th_korridor">Korridore (optional) – Länge in m</label>
+                        <input id="th_korridor" name="treppenhaus_korridor_laenge_m" type="number" min="0" placeholder="z. B. 35" />
+                      </div>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="th_aufzug">Aufzug vorhanden?</label>
+                        <select id="th_aufzug" name="treppenhaus_aufzug">
+                          <option value="">Bitte wählen</option>
+                          <option>Ja</option>
+                          <option>Nein</option>
+                        </select>
+                      </div>
+
+                      <div class="field">
+                        <label for="th_gel">Geländer vorhanden?</label>
+                        <select id="th_gel" name="treppenhaus_gelaender_vorhanden">
+                          <option value="">Bitte wählen</option>
+                          <option>Ja</option>
+                          <option>Nein</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="freq-table">
+                      <div class="freq-row freq-head">
+                        <div>Bereich</div><div>Häufigkeit</div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Treppen & Podeste</div>
+                        <div>
+                          <select name="treppenhaus_freq_treppen_podeste">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Geländer / Handläufe</div>
+                        <div>
+                          <select name="treppenhaus_freq_gelaender">
+                            <option value="">—</option>
+                            <option>Nicht nötig</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Eingang / Glas innen</div>
+                        <div>
+                          <select name="treppenhaus_freq_eingang_glas">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Briefkästen / Klingeln</div>
+                        <div>
+                          <select name="treppenhaus_freq_briefkaesten_klingeln">
+                            <option value="">—</option>
+                            <option>Nicht nötig</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Kellerflur</div>
+                        <div>
+                          <select name="treppenhaus_freq_kellerflur">
+                            <option value="">—</option>
+                            <option>Nicht nötig</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Mülltonnenplatz</div>
+                        <div>
+                          <select name="treppenhaus_freq_muellplatz">
+                            <option value="">—</option>
+                            <option>Nicht nötig</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RESTAURANT -->
+                  <div class="service-panel" data-service="Restaurant" hidden>
+                    <div class="panel-head">
+                      <h3 class="h3">Restaurant – Details</h3>
+                      <p class="muted small">Kurz die Flächen & Sanitär angeben – reicht zur Einschätzung.</p>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="r_m2">Gastraum Fläche (m²)</label>
+                        <input id="r_m2" name="restaurant_gastraum_m2" type="number" min="0" placeholder="z. B. 120" />
+                      </div>
+
+                      <div class="field">
+                        <label for="r_kueche">Küche</label>
+                        <select id="r_kueche" name="restaurant_kueche_option">
+                          <option value="">Bitte wählen</option>
+                          <option>Nein</option>
+                          <option>Leicht (nur Böden/oberflächlich)</option>
+                          <option>Voll (nach Absprache)</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="r_wc">WC Anzahl</label>
+                        <input id="r_wc" name="restaurant_wc_anzahl" type="number" min="0" placeholder="z. B. 2" />
+                      </div>
+
+                      <div class="field">
+                        <label for="r_wb">Waschbecken Anzahl</label>
+                        <input id="r_wb" name="restaurant_waschbecken_anzahl" type="number" min="0" placeholder="z. B. 2" />
+                      </div>
+                    </div>
+
+                    <div class="freq-table">
+                      <div class="freq-row freq-head">
+                        <div>Bereich</div><div>Häufigkeit</div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Gastraum Boden</div>
+                        <div>
+                          <select name="restaurant_freq_boden">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Sanitär (WC)</div>
+                        <div>
+                          <select name="restaurant_freq_wc">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Müllbereich</div>
+                        <div>
+                          <select name="restaurant_freq_muell">
+                            <option value="">—</option>
+                            <option>Nicht nötig</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Fenster / Glas</div>
+                        <div>
+                          <select name="restaurant_freq_fenster_glas">
+                            <option value="">—</option>
+                            <option>Nicht nötig</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FITNESS -->
+                  <div class="service-panel" data-service="Fitness" hidden>
+                    <div class="panel-head">
+                      <h3 class="h3">Fitness – Details</h3>
+                      <p class="muted small">Wenn Sauna vorhanden: markieren – dann erscheinen extra Felder.</p>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="f_m2">Trainingsfläche (m²)</label>
+                        <input id="f_m2" name="fitness_trainingsflaeche_m2" type="number" min="0" placeholder="z. B. 350" />
+                      </div>
+
+                      <div class="field">
+                        <label for="f_umkleiden">Umkleiden (Anzahl)</label>
+                        <input id="f_umkleiden" name="fitness_umkleiden_anzahl" type="number" min="0" placeholder="z. B. 2" />
+                      </div>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="f_duschen">Duschen (Anzahl)</label>
+                        <input id="f_duschen" name="fitness_duschen_anzahl" type="number" min="0" placeholder="z. B. 6" />
+                      </div>
+
+                      <div class="field">
+                        <label for="f_wc">WC (Anzahl)</label>
+                        <input id="f_wc" name="fitness_wc_anzahl" type="number" min="0" placeholder="z. B. 3" />
+                      </div>
+                    </div>
+
+                    <label class="check">
+                      <input id="f_sauna_toggle" type="checkbox" name="fitness_sauna_vorhanden" value="Ja" />
+                      <span><b>Saunabereich vorhanden</b></span>
+                    </label>
+
+                    <div class="subpanel" data-subpanel="fitness-sauna" hidden>
+                      <div class="two-cols">
+                        <div class="field">
+                          <label for="f_sauna_anz">Saunen (Anzahl)</label>
+                          <input id="f_sauna_anz" name="fitness_saunen_anzahl" type="number" min="0" placeholder="z. B. 2" />
+                        </div>
+                        <div class="field">
+                          <label for="f_ruheraum">Ruheraum</label>
+                          <select id="f_ruheraum" name="fitness_ruheraum">
+                            <option value="">Bitte wählen</option>
+                            <option>Ja</option>
+                            <option>Nein</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="two-cols">
+                        <div class="field">
+                          <label for="f_sauna_duschen">Duschen im Saunabereich</label>
+                          <input id="f_sauna_duschen" name="fitness_sauna_duschen_anzahl" type="number" min="0" placeholder="z. B. 2" />
+                        </div>
+                        <div class="field">
+                          <label for="f_sauna_boden">Boden Saunabereich</label>
+                          <select id="f_sauna_boden" name="fitness_sauna_boden">
+                            <option value="">Bitte wählen</option>
+                            <option>Ja</option>
+                            <option>Nein</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-table">
+                        <div class="freq-row freq-head">
+                          <div>Sauna – Bereich</div><div>Häufigkeit</div>
+                        </div>
+
+                        <div class="freq-row">
+                          <div>Saunabereich reinigen</div>
+                          <div>
+                            <select name="fitness_freq_sauna_bereich">
+                              <option value="">—</option>
+                              <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="freq-row">
+                          <div>Duschen Saunabereich</div>
+                          <div>
+                            <select name="fitness_freq_sauna_duschen">
+                              <option value="">—</option>
+                              <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="freq-table">
+                      <div class="freq-row freq-head">
+                        <div>Bereich</div><div>Häufigkeit</div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Trainingsfläche – Boden</div>
+                        <div>
+                          <select name="fitness_freq_trainingsflaeche">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Umkleiden</div>
+                        <div>
+                          <select name="fitness_freq_umkleiden">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Duschen & WC</div>
+                        <div>
+                          <select name="fitness_freq_sanitaer">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Spiegel / Glas</div>
+                        <div>
+                          <select name="fitness_freq_spiegel_glas">
+                            <option value="">—</option>
+                            <option>Nicht nötig</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Geräte abwischen</div>
+                        <div>
+                          <select name="fitness_freq_geraete">
+                            <option value="">—</option>
+                            <option>Nicht nötig</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- BÜRO -->
+                  <div class="service-panel" data-service="Büro" hidden>
+                    <div class="panel-head">
+                      <h3 class="h3">Büro – Details</h3>
+                      <p class="muted small">Kurz: Räume, Fläche, Sanitär.</p>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="b_raeume">Räume / Büros (Anzahl)</label>
+                        <input id="b_raeume" name="buero_raeume_anzahl" type="number" min="0" placeholder="z. B. 6" />
+                      </div>
+                      <div class="field">
+                        <label for="b_m2">Gesamtfläche (m²)</label>
+                        <input id="b_m2" name="buero_gesamtflaeche_m2" type="number" min="0" placeholder="z. B. 180" />
+                      </div>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="b_wc">WC (Anzahl)</label>
+                        <input id="b_wc" name="buero_wc_anzahl" type="number" min="0" placeholder="z. B. 1" />
+                      </div>
+                      <div class="field">
+                        <label for="b_teekueche">Teeküche</label>
+                        <select id="b_teekueche" name="buero_teekueche">
+                          <option value="">Bitte wählen</option>
+                          <option>Ja</option>
+                          <option>Nein</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="freq-table">
+                      <div class="freq-row freq-head"><div>Bereich</div><div>Häufigkeit</div></div>
+
+                      <div class="freq-row">
+                        <div>Böden</div>
+                        <div>
+                          <select name="buero_freq_boeden">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Sanitär</div>
+                        <div>
+                          <select name="buero_freq_sanitaer">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Müllentsorgung</div>
+                        <div>
+                          <select name="buero_freq_muell">
+                            <option value="">—</option>
+                            <option>Nicht nötig</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Oberflächen (Schreibtische oben)</div>
+                        <div>
+                          <select name="buero_freq_oberflaechen">
+                            <option value="">—</option>
+                            <option>Nicht nötig</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- SCHULE -->
+                  <div class="service-panel" data-service="Schule" hidden>
+                    <div class="panel-head">
+                      <h3 class="h3">Schule – Details</h3>
+                      <p class="muted small">Klassen nach Größe + Mengen – schnell.</p>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="s_hol_m2">Eingang / Hol Fläche (m²)</label>
+                        <input id="s_hol_m2" name="schule_hol_m2" type="number" min="0" placeholder="z. B. 80" />
+                      </div>
+                      <div class="field">
+                        <label for="s_wc">WC (Anzahl)</label>
+                        <input id="s_wc" name="schule_wc_anzahl" type="number" min="0" placeholder="z. B. 6" />
+                      </div>
+                    </div>
+
+                    <div class="mini-table">
+                      <div class="mini-row mini-head"><div>Klassenräume</div><div>Menge</div></div>
+                      <div class="mini-row"><div>Klein (~30–40 m²)</div><div><input name="schule_klassen_klein_anzahl" type="number" min="0" placeholder="0" /></div></div>
+                      <div class="mini-row"><div>Mittel (~45–60 m²)</div><div><input name="schule_klassen_mittel_anzahl" type="number" min="0" placeholder="0" /></div></div>
+                      <div class="mini-row"><div>Groß (~65–90 m²)</div><div><input name="schule_klassen_gross_anzahl" type="number" min="0" placeholder="0" /></div></div>
+                    </div>
+
+                    <div class="extras-grid">
+                      <label class="extra"><input type="checkbox" name="schule_aula" value="Ja" /><span>Aula</span></label>
+                      <label class="extra"><input type="checkbox" name="schule_sporthalle" value="Ja" /><span>Sporthalle</span></label>
+                      <label class="extra"><input type="checkbox" name="schule_treppenhaus" value="Ja" /><span>Treppenhaus vorhanden</span></label>
+                      <label class="extra"><input type="checkbox" name="schule_korridore" value="Ja" /><span>Korridore / Flure</span></label>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="s_treppenhaus_anz">Treppenhäuser (Anzahl, optional)</label>
+                        <input id="s_treppenhaus_anz" name="schule_treppenhaeuser_anzahl" type="number" min="0" placeholder="z. B. 2" />
+                      </div>
+                      <div class="field">
+                        <label for="s_korridor_laenge">Korridore Länge (m, optional)</label>
+                        <input id="s_korridor_laenge" name="schule_korridore_laenge_m" type="number" min="0" placeholder="z. B. 120" />
+                      </div>
+                    </div>
+
+                    <div class="freq-table">
+                      <div class="freq-row freq-head"><div>Bereich</div><div>Häufigkeit</div></div>
+
+                      <div class="freq-row">
+                        <div>Klassenräume</div>
+                        <div>
+                          <select name="schule_freq_klassen">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Flure / Hol</div>
+                        <div>
+                          <select name="schule_freq_flure_hol">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Sanitär</div>
+                        <div>
+                          <select name="schule_freq_sanitaer">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Aula / Sporthalle</div>
+                        <div>
+                          <select name="schule_freq_aula_sporthalle">
+                            <option value="">—</option>
+                            <option>Nicht nötig</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- KINDERGARTEN -->
+                  <div class="service-panel" data-service="Kindergarten" hidden>
+                    <div class="panel-head">
+                      <h3 class="h3">Kindergarten – Details</h3>
+                      <p class="muted small">Gruppen + Sanitär – fertig.</p>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="k_gruppen">Gruppenräume (Anzahl)</label>
+                        <input id="k_gruppen" name="kita_gruppenraeume_anzahl" type="number" min="0" placeholder="z. B. 3" />
+                      </div>
+                      <div class="field">
+                        <label for="k_wc">Kinder-WC (Anzahl)</label>
+                        <input id="k_wc" name="kita_wc_anzahl" type="number" min="0" placeholder="z. B. 2" />
+                      </div>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="k_kueche">Küche</label>
+                        <select id="k_kueche" name="kita_kueche">
+                          <option value="">Bitte wählen</option>
+                          <option>Ja</option>
+                          <option>Nein</option>
+                        </select>
+                      </div>
+                      <div class="field">
+                        <label for="k_schlaf">Schlafräume (optional)</label>
+                        <input id="k_schlaf" name="kita_schlafraeume_anzahl" type="number" min="0" placeholder="z. B. 1" />
+                      </div>
+                    </div>
+
+                    <div class="freq-table">
+                      <div class="freq-row freq-head"><div>Bereich</div><div>Häufigkeit</div></div>
+
+                      <div class="freq-row">
+                        <div>Böden</div>
+                        <div>
+                          <select name="kita_freq_boeden">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Sanitär</div>
+                        <div>
+                          <select name="kita_freq_sanitaer">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Tische / Oberflächen</div>
+                        <div>
+                          <select name="kita_freq_oberflaechen">
+                            <option value="">—</option>
+                            <option>Nicht nötig</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- SOZIALRÄUME -->
+                  <div class="service-panel" data-service="Sozialräume (Halle)" hidden>
+                    <div class="panel-head">
+                      <h3 class="h3">Sozialräume (Halle) – Details</h3>
+                      <p class="muted small">Pausenraum, WC, Büro, Flur.</p>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="sr_pausen">Pausenraum/Buffet (Anzahl)</label>
+                        <input id="sr_pausen" name="sozial_pausenraum_anzahl" type="number" min="0" placeholder="z. B. 1" />
+                      </div>
+                      <div class="field">
+                        <label for="sr_wc">WC (Anzahl)</label>
+                        <input id="sr_wc" name="sozial_wc_anzahl" type="number" min="0" placeholder="z. B. 2" />
+                      </div>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="sr_buero">Büro (Anzahl)</label>
+                        <input id="sr_buero" name="sozial_buero_anzahl" type="number" min="0" placeholder="z. B. 1" />
+                      </div>
+                      <div class="field">
+                        <label for="sr_flur">Flur/Korridor Länge (m, optional)</label>
+                        <input id="sr_flur" name="sozial_flur_laenge_m" type="number" min="0" placeholder="z. B. 40" />
+                      </div>
+                    </div>
+
+                    <div class="freq-table">
+                      <div class="freq-row freq-head"><div>Bereich</div><div>Häufigkeit</div></div>
+
+                      <div class="freq-row">
+                        <div>Pausenraum</div>
+                        <div>
+                          <select name="sozial_freq_pausenraum">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>WC</div>
+                        <div>
+                          <select name="sozial_freq_wc">
+                            <option value="">—</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Büro</div>
+                        <div>
+                          <select name="sozial_freq_buero">
+                            <option value="">—</option>
+                            <option>Nicht nötig</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="freq-row">
+                        <div>Flur</div>
+                        <div>
+                          <select name="sozial_freq_flur">
+                            <option value="">—</option>
+                            <option>Nicht nötig</option>
+                            <option>Einmalig</option><option>1×/Woche</option><option>2×/Woche</option><option>3×/Woche</option><option>Täglich</option><option>Nach Absprache</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- PC & LAPTOP -->
+                  <div class="service-panel" data-service="PC & Laptop" hidden>
+                    <div class="panel-head">
+                      <h3 class="h3">PC & Laptop – Details</h3>
+                      <p class="muted small">Reinigung & Wartung (ohne Konsolen).</p>
+                    </div>
+
+                    <div class="two-cols">
+                      <div class="field">
+                        <label for="pc_anz">PC (Anzahl)</label>
+                        <input id="pc_anz" name="pc_anzahl" type="number" min="0" placeholder="z. B. 3" />
+                      </div>
+                      <div class="field">
+                        <label for="lp_anz">Laptop (Anzahl)</label>
+                        <input id="lp_anz" name="laptop_anzahl" type="number" min="0" placeholder="z. B. 2" />
+                      </div>
+                    </div>
+
+                    <div class="extras-grid">
+                      <label class="extra"><input type="checkbox" name="pc_option_aussenreinigung" value="Ja" /><span>Außenreinigung</span></label>
+                      <label class="extra"><input type="checkbox" name="pc_option_innenreinigung" value="Ja" /><span>Innenreinigung (Staub)</span></label>
+                      <label class="extra"><input type="checkbox" name="pc_option_wartung" value="Ja" /><span>Wartung (z.B. Wärmeleitpaste)</span></label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- 3) ORT -->
+              <fieldset class="fieldset">
+                <legend class="legend">3) Ort</legend>
+
+                <div class="two-cols">
+                  <div class="field">
+                    <label for="ort">Ort / Stadt</label>
+                    <input id="ort" name="ort" type="text" required placeholder="z. B. Salzgitter" autocomplete="address-level2" />
+                  </div>
+                  <div class="field">
+                    <label for="plz">PLZ (optional)</label>
+                    <input id="plz" name="plz" type="text" inputmode="numeric" placeholder="z. B. 38226" autocomplete="postal-code" />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="adresse">Adresse (optional)</label>
+                  <input id="adresse" name="adresse" type="text" placeholder="Straße, Hausnummer" autocomplete="street-address" />
+                </div>
+              </fieldset>
+
+              <!-- 4) KONTAKT -->
+              <fieldset class="fieldset">
+                <legend class="legend">4) Kontakt</legend>
+
+                <div class="two-cols">
+                  <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required autocomplete="name" />
+                  </div>
+                  <div class="field">
+                    <label for="firma">Firma (optional)</label>
+                    <input id="firma" name="firma" type="text" autocomplete="organization" />
+                  </div>
+                </div>
+
+                <div class="two-cols">
+                  <div class="field">
+                    <label for="email">E-Mail</label>
+                    <input id="email" name="email" type="email" required autocomplete="email" placeholder="name@firma.de" />
+                  </div>
+                  <div class="field">
+                    <label for="telefon">Telefon (optional)</label>
+                    <input id="telefon" name="telefon" type="tel" autocomplete="tel" placeholder="+49 ..." />
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- 5) MESSAGE -->
+              <fieldset class="fieldset">
+                <legend class="legend">5) Kurz beschreiben</legend>
+                <div class="field">
+                  <label for="nachricht">Worum geht’s?</label>
+                  <textarea
+                    id="nachricht"
+                    name="nachricht"
+                    rows="5"
+                    placeholder="Kurz: Besonderheiten, Zeiten, Zugang, Schlüssel, Probleme (EG ist stark verschmutzt usw.)..."
+                    required
+                  ></textarea>
+                </div>
+              </fieldset>
+
+              <!-- EXTRA BOX BELOW -->
+              <fieldset class="fieldset">
+                <legend class="legend">Zusatz (optional)</legend>
+                <div class="field">
+                  <label for="sonstiges">Sonstiges / Nicht im Formular</label>
+                  <textarea
+                    id="sonstiges"
+                    name="sonstiges_nicht_im_formular"
+                    rows="4"
+                    placeholder="Hier alles reinschreiben, was im Formular nicht vorkommt (Sonderwünsche, Fotos-Link, spezielle Bereiche, Zugang, Termine...)"
+                  ></textarea>
+                </div>
+
+                <label class="check">
+                  <input type="checkbox" name="datenschutz" required />
+                  <span>Ich habe die <a class="inline-link" href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme zu.</span>
+                </label>
+              </fieldset>
+
+              <!-- SUBMIT -->
+              <div class="submit-row">
+                <button id="submitBtn" class="btn btn-submit" type="submit">
+                  <span class="btn-text">Senden</span>
+                  <span class="btn-spinner" aria-hidden="true"></span>
+                </button>
+
+                <div class="status">
+                  <span id="statusDot" class="status-dot" aria-hidden="true"></span>
+                  <span id="statusText" class="status-text">Bereit</span>
+                </div>
+              </div>
+
+              <p class="bottom-note">
+                Hinweis: Nach dem Klick bitte kurz warten, bis die Kontrollleuchte <b>grün</b> wird.
+              </p>
+
+              <div id="formAlert" class="alert" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <!-- SIDE -->
+          <aside class="side-card reveal">
+            <h3 class="h3">Kurz. Klar. Fertig.</h3>
+            <p class="muted">
+              Du gibst nur das an, was wichtig ist. Den Rest klären wir danach schnell.
+            </p>
+            <div class="side-list">
+              <div class="side-item">
+                <div class="side-title">Schnelle Rückmeldung</div>
+                <div class="muted small">Meist am selben oder nächsten Werktag.</div>
+              </div>
+              <div class="side-item">
+                <div class="side-title">EG im Blick</div>
+                <div class="muted small">Parter ist oft der wichtigste Bereich.</div>
+              </div>
+              <div class="side-item">
+                <div class="side-title">Status sofort sichtbar</div>
+                <div class="muted small">Grün = Anfrage ist raus.</div>
+              </div>
+            </div>
+            <div class="side-cta">
+              <a class="btn btn-ghost" href="kontakt.html">Lieber direkt Kontakt?</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">DR Service</div>
+        <div class="muted small">Gebäudereinigung</div>
+      </div>
+      <div class="footer-links">
+        <a class="footer-link" href="impressum.html">Impressum</a>
+        <a class="footer-link" href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/form.js"></script>
+</body>
+</html>
