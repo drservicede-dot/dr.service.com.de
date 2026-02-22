@@ -1,0 +1,27 @@
+/* Reveal on scroll */
+.reveal{
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .45s ease, transform .45s ease;
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .reveal{
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .service-card,
+  .service-media img,
+  .btn,
+  .link{
+    transition: none !important;
+  }
+}
