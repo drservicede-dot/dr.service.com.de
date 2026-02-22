@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anfrage – DR Service</title>
+  <meta name="description" content="Kostenloses und unverbindliches Angebot für Ihre Gebäudereinigung anfordern." />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/form.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Zum Inhalt springen</a>
+
+  <header class="site-header" data-elevate>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Zur Startseite">
+        <img class="brand-logo" src="assets/brand/logo.png" alt="DR Service" />
+        <span class="brand-text">
+          <span class="brand-name">DR Service</span>
+          <span class="brand-sub">Gebäudereinigung</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Hauptnavigation">
+        <a class="nav-link" href="index.html">Start</a>
+        <a class="nav-link" href="services.html">Leistungen</a>
+        <a class="nav-link is-active" href="anfrage.html">Anfrage</a>
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+        <a class="nav-cta" href="anfrage.html">Jetzt anfragen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-card reveal">
+          <h1 class="h1">Kostenloses Angebot anfordern</h1>
+          <p class="lead">Füllen Sie das Formular aus – wir melden uns umgehend mit einer passenden Lösung für Ihr Objekt.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="formular" class="section">
+      <div class="container">
+        
+        <div class="form-layout">
+          <div class="form-card reveal">
+            <form id="dr-anfrage-form">
+              
+              <fieldset class="fieldset">
+                <legend class="legend">1. Kontaktdaten</legend>
+                <div class="two-cols">
+                  <div class="field">
+                    <label for="firma">Firmenname (optional)</label>
+                    <input type="text" id="firma" name="Firma" placeholder="Muster GmbH">
+                  </div>
+                  <div class="field">
+                    <label for="name">Ihr Name *</label>
+                    <input type="text" id="name" name="Name" placeholder="Max Mustermann" required>
+                  </div>
+                </div>
+                <div class="two-cols">
+                  <div class="field">
+                    <label for="email">E-Mail Adresse *</label>
+                    <input type="email" id="email" name="Email" placeholder="info@beispiel.de" required>
+                  </div>
+                  <div class="field">
+                    <label for="telefon">Telefonnummer *</label>
+                    <input type="tel" id="telefon" name="Telefon" placeholder="+49 123 456789" required>
+                  </div>
+                </div>
+                <div class="two-cols">
+                  <div class="field">
+                    <label for="plz">PLZ</label>
+                    <input type="text" id="plz" name="PLZ" placeholder="38226">
+                  </div>
+                  <div class="field">
+                    <label for="ort">Ort *</label>
+                    <input type="text" id="ort" name="Ort" placeholder="Salzgitter" required>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="fieldset">
+                <legend class="legend">2. Welche Leistungen benötigen Sie?</legend>
+                <div class="field">
+                  <label for="leistungen">Bitte geben Sie an, was gereinigt werden soll *</label>
+                  <input type="text" id="leistungen" name="Leistungen" placeholder="z. B. Treppenhaus, Büro, Vertretung..." required>
+                </div>
+              </fieldset>
+
+              <fieldset class="fieldset">
+                <legend class="legend">3. Objektdetails</legend>
+                <div class="two-cols">
+                  <div class="field">
+                    <label for="flaeche">Ungefähre Fläche (m²) *</label>
+                    <input type="number" id="flaeche" name="Flaeche" placeholder="z. B. 150" required>
+                  </div>
+                  <div class="field">
+                    <label for="frequenz">Wie oft soll gereinigt werden?</label>
+                    <select id="frequenz" name="Haeufigkeit">
+                      <option value="1x pro Woche">1x pro Woche</option>
+                      <option value="2x pro Woche">2x pro Woche</option>
+                      <option value="Täglich">Täglich</option>
+                      <option value="Einmalig / Grundreinigung">Einmalig / Grundreinigung</option>
+                      <option value="Noch unklar">Noch unklar (Beratung gewünscht)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field" style="margin-top: 20px;">
+                  <label for="verschmutzung">Aktueller Zustand / Verschmutzungsgrad (1 = Leicht, 5 = Stark)</label>
+                  <input type="range" id="verschmutzung" name="Verschmutzungsgrad" min="1" max="5" value="3">
+                  <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--muted); margin-top: 5px;">
+                    <span>Leicht</span>
+                    <span>Mittel</span>
+                    <span>Stark</span>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="fieldset">
+                <legend class="legend">4. Budget & Sonstiges</legend>
+                <div class="two-cols">
+                  <div class="field">
+                    <label for="budget">Budget-Rahmen</label>
+                    <select id="budget" name="Budget_Rahmen">
+                      <option value="Keine Angabe">Bitte wählen...</option>
+                      <option value="Bis 300 €">Bis 300 €</option>
+                      <option value="300 - 800 €">300 - 800 €</option>
+                      <option value="800 - 1500 €">800 - 1.500 €</option>
+                      <option value="Über 1500 €">Über 1.500 €</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="exact_budget">Konkretes Budget in €</label>
+                    <input type="number" id="exact_budget" name="Wunsch_Budget" placeholder="z.B. 450">
+                  </div>
+                </div>
+
+                <div class="field" style="margin-top: 15px;">
+                  <label for="nachricht">Zusätzliche Infos / Besonderheiten</label>
+                  <textarea id="nachricht" name="Nachricht" rows="4" placeholder="Gibt es bestimmte Zeiten? Besondere Bodenbeläge?"></textarea>
+                </div>
+              </fieldset>
+
+              <button class="btn btn-submit" type="submit" id="submitBtn">Unverbindlich anfragen</button>
+            </form>
+          </div>
+
+          <aside class="side-card reveal">
+            <h3 class="h3">Ihr Weg zur Sauberkeit</h3>
+            <p class="muted">Wir machen es Ihnen so einfach wie möglich. Keine versteckten Kosten, klare Kommunikation.</p>
+            <div class="side-list">
+              <div class="side-item">
+                <div class="side-title">1. Formular absenden</div>
+                <div class="muted small">Dauert nur 60 Sekunden.</div>
+              </div>
+              <div class="side-item">
+                <div class="side-title">2. Kurzfristige Rückmeldung</div>
+                <div class="muted small">Wir melden uns meist innerhalb von 24 Stunden.</div>
+              </div>
+              <div class="side-item">
+                <div class="side-title">3. Besichtigung (optional)</div>
+                <div class="muted small">Für ein exaktes, verbindliches Angebot.</div>
+              </div>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">DR Service</div>
+        <div class="muted small">Gebäudereinigung</div>
+      </div>
+      <div class="footer-links">
+        <a class="footer-link" href="impressum.html">Impressum</a>
+        <a class="footer-link" href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/animations.js"></script>
+  
+  <script>
+    const form = document.getElementById('dr-anfrage-form');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      submitBtn.disabled = true;
+      submitBtn.innerText = 'Wird gesendet...';
+
+      const formData = new FormData(form);
+      
+      // Tutaj wklej URL z Google Apps Script, o którym pisałem wcześniej
+      const scriptURL = 'TWÓJ_LINK_Z_GOOGLE_APPS_SCRIPT_TUTAJ';
+
+      fetch(scriptURL, { method: 'POST', body: formData})
+        .then(response => {
+          alert('Vielen Dank! Ihre Anfrage wurde erfolgreich gesendet. Wir melden uns in Kürze.');
+          form.reset();
+          submitBtn.disabled = false;
+          submitBtn.innerText = 'Unverbindlich anfragen';
+        })
+        .catch(error => {
+          console.error('Error!', error.message);
+          alert('Fehler! Bitte versuchen Sie es später noch einmal oder kontaktieren Sie uns direkt.');
+          submitBtn.disabled = false;
+          submitBtn.innerText = 'Unverbindlich anfragen';
+        });
+    });
+  </script>
+</body>
+</html>
