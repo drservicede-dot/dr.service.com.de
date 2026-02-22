@@ -85,8 +85,8 @@
   gap: 12px;
   padding: 16px;
   border-radius: 22px;
-  border: 1px solid rgba(0,0,0,.08);
-  background: rgba(216,201,180,.25);
+  border: 1px solid rgba(34,34,34,.80);
+  background: rgba (grafit);
 }
 
 @media (max-width: 720px){

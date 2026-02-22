@@ -25,10 +25,12 @@
   gap: 8px;
   padding: 8px 12px;
   border-radius: 999px;
-  background: rgba(216,201,180,.25);
-  border: 1px solid rgba(0,0,0,.08);
+  /* ZMIANA: Morski granat z ulotki z niskim kryciem */
+  background: rgba(34, 81, 102, 0.1); 
+  border: 1px solid rgba(59, 174, 209, 0.2);
   font-weight: 800;
   font-size: 12px;
+  color: #225166;
 }
 
 /* =========================================================
@@ -40,17 +42,18 @@
   line-height: 1.05;
   margin: 12px 0 10px;
   letter-spacing: -0.02em;
+  color: #225166;
 }
 
-/* 🔴 ZMIANA: gradient na CAŁYM nagłówku */
+/* gradient na nagłówku - teraz morski */
 .hero-title--bg{
   display: inline-block;
   padding: 14px 20px;
   border-radius: 26px;
   background: linear-gradient(
     90deg,
-    rgba(216,201,180,.35),
-    rgba(216,201,180,.65)
+    rgba(59, 174, 209, 0.2),
+    rgba(34, 81, 102, 0.1)
   );
 }
 
@@ -84,7 +87,7 @@
 
 .badge{
   background: rgba(250,250,250,.8);
-  border: 1px solid rgba(0,0,0,.08);
+  border: 1px solid rgba(34, 81, 102, 0.1);
   border-radius: 18px;
   padding: 12px;
 }
@@ -92,6 +95,7 @@
 .badge-title{
   font-weight: 900;
   margin-bottom: 2px;
+  color: #225166;
 }
 
 /* =========================================================
@@ -100,7 +104,7 @@
 
 .hero-card{
   background: var(--surface);
-  border: 1px solid rgba(0,0,0,.08);
+  border: 1px solid rgba(34, 81, 102, 0.1);
   border-radius: 22px;
   overflow:hidden;
   box-shadow: var(--shadow-sm);
@@ -126,7 +130,7 @@
 
 .mini-item{
   background: rgba(250,250,250,.8);
-  border: 1px solid rgba(0,0,0,.08);
+  border: 1px solid rgba(34, 81, 102, 0.1);
   border-radius: 18px;
   padding: 12px;
 }
@@ -136,13 +140,14 @@
   align-items:center;
   gap: 10px;
   font-weight: 900;
+  color: #225166;
 }
 
 .mini-top img{
   width: 22px;
   height: 22px;
   background:#fff;
-  border: 1px solid rgba(0,0,0,.10);
+  border: 1px solid #3BAED1; /* Błękitny akcent przy ikonach */
   border-radius: 10px;
   padding: 6px;
 }
@@ -164,8 +169,8 @@
   gap: 12px;
   padding: 16px;
   border-radius: 22px;
-  border: 1px solid rgba(0,0,0,.08);
-  background: rgba(216,201,180,.25);
+  border: 1px solid rgba(34, 81, 102, 0.1);
+  background: rgba(59, 174, 209, 0.15); /* Jasny błękit tła */
 }
 
 @media (max-width: 720px){
@@ -194,7 +199,7 @@
 
 .steps{
   border-radius: 22px;
-  border: 1px solid rgba(0,0,0,.08);
+  border: 1px solid rgba(34, 81, 102, 0.1);
   background: rgba(250,250,250,.8);
   padding: 16px;
   box-shadow: var(--shadow-sm);
@@ -213,7 +218,7 @@
 
 .step{
   background: #fff;
-  border: 1px solid rgba(0,0,0,.08);
+  border: 1px solid rgba(34, 81, 102, 0.1);
   border-radius: 18px;
   padding: 14px;
 }
@@ -226,13 +231,15 @@
   align-items:center;
   justify-content:center;
   font-weight: 900;
-  border: 1px solid rgba(0,0,0,.10);
-  background: rgba(216,201,180,.35);
+  border: 1px solid rgba(59, 174, 209, 0.3);
+  background: #3BAED1; /* Błękitne tło numerów */
+  color: #fff;
 }
 
 .step-title{
   margin-top: 8px;
   font-weight: 900;
+  color: #225166;
 }
 
 .steps-actions{
@@ -248,7 +255,7 @@
 
 .carousel{
   background: rgba(250,250,250,.75);
-  border: 1px solid rgba(0,0,0,.08);
+  border: 1px solid rgba(34, 81, 102, 0.1);
   border-radius: 22px;
   padding: 14px;
   box-shadow: var(--shadow-sm);
@@ -271,17 +278,22 @@
   width: 44px;
   height: 44px;
   border-radius: 14px;
-  border: 1px solid rgba(0,0,0,.10);
-  background: #fff;
+  border: 1px solid rgba(34, 81, 102, 0.1);
+  background: #225166; /* Granatowe przyciski */
+  color: #fff; /* Białe strzałki */
   font-size: 22px;
   font-weight: 900;
   cursor: pointer;
-  box-shadow: 0 10px 24px rgba(0,0,0,.10);
+  box-shadow: 0 10px 24px rgba(34, 81, 102, 0.15);
   transition: transform .2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .car-btn:hover{
   transform: translateY(-2px);
+  background: #3BAED1; /* Błękit na hover */
 }
 
 .carousel-viewport{
@@ -307,18 +319,18 @@
   flex: 0 0 auto;
   width: min(360px, 82vw);
   background: #fff;
-  border: 1px solid rgba(0,0,0,.08);
+  border: 1px solid rgba(34, 81, 102, 0.1);
   border-radius: 18px;
   overflow:hidden;
   text-decoration: none;
   color: inherit;
-  box-shadow: 0 14px 30px rgba(0,0,0,.12);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
   transition: transform .2s ease, border-color .2s ease;
 }
 
 .car-card:hover{
   transform: translateY(-3px);
-  border-color: rgba(0,0,0,.16);
+  border-color: #3BAED1;
 }
 
 .car-card img{
@@ -335,13 +347,14 @@
 .car-name{
   font-weight: 900;
   margin-bottom: 2px;
+  color: #225166;
 }
 
 .car-sub{
   font-size: 13px;
 }
 
-/* dots (opcjonalne) */
+/* dots */
 .carousel-dots{
   margin-top: 10px;
   display:flex;
@@ -354,12 +367,12 @@
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  border: 1px solid rgba(0,0,0,.18);
-  background: rgba(0,0,0,.12);
+  border: 1px solid rgba(34, 81, 102, 0.2);
+  background: rgba(34, 81, 102, 0.1);
   cursor: pointer;
 }
 
 .car-dot.is-active{
-  background: rgba(216,201,180,.95);
-  border-color: rgba(0,0,0,.22);
+  background: #3BAED1; /* Aktywna kropka błękitna */
+  border-color: #3BAED1;
 }
