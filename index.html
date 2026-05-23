@@ -1,283 +1,610 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>DR Service – Gebäudereinigung</title>
-  <meta name="description" content="DR Service – Professionelle Gebäudereinigung. Zuverlässig, gründlich und mit klaren Absprachen." />
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DR-service Geb&auml;udereinigung Salzgitter | Reinigung &amp; Angebotsanfrage</title>
+  <meta name="description" content="Professionelle Geb&auml;udereinigung in Salzgitter, Wolfenb&uuml;ttel, Braunschweig und Helmstedt. Treppenhaus, B&uuml;ro, Fitnessstudio, Gastronomie, Schulen, Kinderg&auml;rten und Gewerbe. Jetzt unverbindlich anfragen.">
+  <meta name="theme-color" content="#081726">
+  <meta property="og:title" content="DR-service Geb&auml;udereinigung Salzgitter | Reinigung &amp; Angebotsanfrage">
+  <meta property="og:description" content="Professionelle Geb&auml;udereinigung in Salzgitter, Wolfenb&uuml;ttel, Braunschweig und Helmstedt. Schwerpunkt Gewerbe, Privatkunden willkommen.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:image" content="assets/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/animations.css" />
-  <link rel="stylesheet" href="assets/css/home.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body class="page-home">
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
 
-<body>
-  <a class="skip-link" href="#content">Zum Inhalt springen</a>
+  <div class="splash-screen" id="splash-screen" aria-hidden="true">
+    <div class="splash-screen__inner">
+      <img class="splash-screen__logo" src="assets/brand/logo.png" alt="" width="800" height="800">
+      <p class="splash-screen__name">DR-service Geb&auml;udereinigung</p>
+      <p class="splash-screen__slogan" data-slogan>Sauber. Mit Plan.</p>
+    </div>
+  </div>
 
-  <header class="site-header" data-elevate>
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Zur Startseite">
-        <img class="brand-logo" src="assets/brand/logo.png" alt="DR Service" />
-        <span class="brand-text">
-          <span class="brand-name">DR Service</span>
-          <span class="brand-sub">Gebäudereinigung</span>
+  <aside class="promo-modal" id="promo-modal" hidden>
+    <div class="promo-modal__backdrop" data-promo-close></div>
+    <div class="promo-modal__panel" role="dialog" aria-modal="true" aria-labelledby="promo-title">
+      <button class="promo-modal__close" type="button" aria-label="Hinweis schlie&szlig;en" data-promo-close>&times;</button>
+      <p class="eyebrow">Neukunden-Vorteil</p>
+      <h2 id="promo-title"><span data-discount>10 %</span> im ersten Monat sichern</h2>
+      <p>
+        F&uuml;r neue laufende Reinigungspl&auml;ne nach kurzer R&uuml;cksprache und Verf&uuml;gbarkeit.
+        Ideal f&uuml;r Treppenh&auml;user, kleine B&uuml;ros, Sozialr&auml;ume und regelm&auml;&szlig;ige Gewerbeobjekte.
+      </p>
+      <div class="promo-modal__actions">
+        <a class="button button-primary" href="#kontakt" data-promo-close>Jetzt anfragen</a>
+        <a class="button button-secondary" href="https://wa.me/491774615992?text=Hallo%20DR-service%2C%20ich%20interessiere%20mich%20f%C3%BCr%20den%20Neukunden-Vorteil." target="_blank" rel="noopener noreferrer" data-promo-close">WhatsApp schreiben</a>
+      </div>
+      <p class="microcopy">Hinweis: Die endg&uuml;ltige Freigabe erfolgt nach kurzer Abstimmung.</p>
+    </div>
+  </aside>
+
+  <header class="site-header" id="top">
+    <div class="header-meta">
+      <div class="container header-meta__inner">
+        <span>Salzgitter, Wolfenb&uuml;ttel, Braunschweig, Helmstedt</span>
+        <span>Professionelle Reinigung mit hochwertigen Kiehl-Produkten</span>
+        <span>Kleinunternehmer gem&auml;&szlig; &sect; 19 UStG</span>
+      </div>
+    </div>
+
+    <div class="container header-main">
+      <a class="brand" href="index.html#top" aria-label="DR-service Geb&auml;udereinigung Startseite">
+        <img class="brand__logo" src="assets/brand/logo.png" alt="DR-service Geb&auml;udereinigung" width="800" height="800">
+        <span class="brand__copy">
+          <strong>DR-service</strong>
+          <span>Geb&auml;udereinigung</span>
         </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Navigation &ouml;ffnen</span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
-      <nav id="site-nav" class="site-nav" aria-label="Hauptnavigation">
-        <a class="nav-link is-active" href="index.html">Start</a>
-        <a class="nav-link" href="services.html">Leistungen</a>
-        <a class="nav-link" href="anfrage.html">Anfrage</a>
-        <a class="nav-link" href="kontakt.html">Kontakt</a>
-        <a class="nav-cta" href="anfrage.html">Jetzt anfragen</a>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+        <a href="#top" aria-current="page">Start</a>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#preise">Preise</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#vorteile">Vorteile</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="button button-primary button-small" href="#kontakt">Jetzt anfragen</a>
       </nav>
     </div>
   </header>
 
-  <main id="content">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-left reveal">
-          <div class="pill">Professionelle Gebäudereinigung in Salzgitter</div>
-
-          <h1 class="hero-title">
-            Ihre Immobilie in besten Händen.
-            <span class="accent">Sauberkeit, die überzeugt.</span>
-          </h1>
-
-          <p class="hero-lead">
-            Mein Name ist Dawid Rzeszowski. Seit rund 5 Jahren arbeite ich in der Gebäudereinigung und seit Januar führe ich mein eigenes Unternehmen DR Service. Mir ist wichtig, dass Reinigung nicht nur schnell erledigt wird, sondern wirklich gründlich ist. Ich achte auf Details, sehe auch die kleinen Dinge und arbeite zuverlässig, sauber und mit klaren Absprachen.
+  <main id="main-content">
+    <section class="hero" id="start">
+      <div class="container hero__layout">
+        <div class="hero__copy" data-reveal>
+          <p class="eyebrow">Geb&auml;udereinigung f&uuml;r Unternehmen, Hausverwaltungen und Privathaushalte</p>
+          <h1>Professionelle Reinigung in Salzgitter und Umgebung, klar organisiert und sichtbar gr&uuml;ndlich.</h1>
+          <p class="hero__slogan" data-slogan>Sauber. Mit Plan.</p>
+          <p class="hero__lead">
+            DR-service Geb&auml;udereinigung ist die Marke von DR-service Dawid Rzeszowski und betreut Treppenh&auml;user, B&uuml;ros, Fitnessstudios,
+            Gastronomie, Schulen, Kinderg&auml;rten, Sozialr&auml;ume und Gewerbeobjekte. Der Schwerpunkt
+            liegt auf regelm&auml;&szlig;igen gewerblichen Eins&auml;tzen, gleichzeitig sind auch Privatkunden herzlich willkommen.
           </p>
 
-          <div class="hero-actions">
-            <a class="btn" href="anfrage.html">Kostenloses Angebot anfordern</a>
-            <a class="btn btn-ghost" href="services.html">Leistungen entdecken</a>
+          <div class="hero__actions">
+            <a class="button button-primary" href="#kontakt">Jetzt anfragen</a>
+            <a class="button button-secondary" href="https://wa.me/491774615992?text=Hallo%20DR-service%2C%20ich%20m%C3%B6chte%20eine%20Reinigungsanfrage%20stellen." target="_blank" rel="noopener noreferrer">WhatsApp schreiben</a>
           </div>
 
-          <div class="hero-badges">
-            <div class="badge">
-              <div class="badge-title">Zuverlässigkeit</div>
-              <div class="muted small">Termintreue und höchste Sorgfalt bei jedem Einsatz.</div>
+          <div class="hero__signals">
+            <div class="signal-block">
+              <span class="signal-block__label">Orientierung</span>
+              <strong>ab <span data-hourly-from>25 &euro;</span> / Stunde</strong>
+              <p>Als klare Basis f&uuml;r planbare Unterhaltsreinigung und wiederkehrende Eins&auml;tze.</p>
             </div>
-            <div class="badge">
-              <div class="badge-title">Gründlichkeit</div>
-              <div class="muted small">Reinigung bis ins Detail für Ihren Werterhalt.</div>
+            <div class="signal-block">
+              <span class="signal-block__label">Kommunikation</span>
+              <strong>Direkt. Pers&ouml;nlich. Verbindlich.</strong>
+              <p>Kurze Abstimmung, nachvollziehbare Leistung und kein unn&ouml;tiges Verkaufsgerede.</p>
             </div>
-            <div class="badge">
-              <div class="badge-title">Schnelle Anfrage</div>
-              <div class="muted small">In nur 60 Sekunden zum unverbindlichen Angebot.</div>
+            <div class="signal-block">
+              <span class="signal-block__label">Produkte</span>
+              <strong>Kiehl im professionellen Einsatz</strong>
+              <p>Passende Mittel f&uuml;r Sanit&auml;r, B&ouml;den, Oberfl&auml;chen und sensible Innenbereiche.</p>
             </div>
           </div>
         </div>
 
-        <div class="hero-right reveal">
-          <div class="hero-card">
-            <img src="assets/img/hero/hero-desktop.webp" alt="Sauberkeit im Gebäude" loading="eager" />
+        <div class="hero__stage" data-reveal>
+          <div class="hero-visual">
+            <div class="hero-visual__main">
+              <img src="assets/img/hero/hero-desktop.webp" alt="Gepflegter Eingangsbereich eines Geb&auml;udes" width="1920" height="1080" loading="eager" decoding="async">
+            </div>
+            <div class="hero-visual__strip">
+              <img src="assets/img/services/tile-staircase.webp" alt="Treppenhausreinigung" width="1200" height="800" loading="lazy" decoding="async">
+              <img src="assets/img/services/tile-office.webp" alt="B&uuml;roreinigung" width="1200" height="800" loading="lazy" decoding="async">
+            </div>
           </div>
 
-          <div class="hero-mini">
-            <div class="mini-item">
-              <div class="mini-top">
-                <img src="assets/icons/staircase.svg" alt="" aria-hidden="true">
-                <span>Treppenhaus</span>
-              </div>
-              <span class="mini-sub muted">Regelmäßige Pflege</span>
-            </div>
-            <div class="mini-item">
-              <div class="mini-top">
-                <img src="assets/icons/fitness.svg" alt="" aria-hidden="true">
-                <span>Fitness</span>
-              </div>
-              <span class="mini-sub muted">Hygienische Sauberkeit</span>
-            </div>
-            <div class="mini-item">
-              <div class="mini-top">
-                <img src="assets/icons/pc-laptop.svg" alt="" aria-hidden="true">
-                <span>Vertretung</span>
-              </div>
-              <span class="mini-sub muted">Ersatz bei Krankheit & Urlaub</span>
-            </div>
+          <div class="hero-note hero-note--top">
+            <span>Schwerpunkt Gewerbe</span>
+            <strong>Treppenhaus, B&uuml;ro, Fitness, Gastronomie, Schule, Kindergarten</strong>
+          </div>
+
+          <div class="hero-note hero-note--bottom">
+            <span>Flexible Unterst&uuml;tzung</span>
+            <strong>Auch Vertretung bei Krankheit oder Urlaub im bestehenden Reinigungsplan.</strong>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--light" id="preise">
       <div class="container">
-        <div class="section-head reveal">
-          <h2 class="h2">Leistungen, die überzeugen</h2>
-          <p class="muted">
-            Qualität statt großer Worte. Wir garantieren saubere Arbeit durch geschultes Personal.
-          </p>
-        </div>
-
-        <div class="carousel reveal" data-carousel>
-          <div class="carousel-top">
-            <div class="carousel-title">
-              <span class="h3">Galerie</span>
-              <span class="muted small">Wischen oder Pfeile nutzen.</span>
-            </div>
-
-            <div class="carousel-controls">
-              <button class="car-btn" type="button" data-car-prev aria-label="Zurück">‹</button>
-              <button class="car-btn" type="button" data-car-next aria-label="Weiter">›</button>
-            </div>
-          </div>
-
-          <div class="carousel-viewport" tabindex="0" aria-label="Leistungen Galerie" data-car-viewport>
-            <div class="carousel-track" data-car-track>
-              <a class="car-card" href="services.html#liste" aria-label="Treppenhaus">
-                <img src="assets/img/services/tile-staircase.webp" alt="Treppenhaus" loading="lazy">
-                <div class="car-meta">
-                  <div class="car-name">Treppenhaus</div>
-                  <div class="car-sub muted">Eingang, Etagen, Geländer, Fenster</div>
-                </div>
-              </a>
-
-              <a class="car-card" href="services.html#liste" aria-label="Restaurant">
-                <img src="assets/img/services/tile-restaurant.webp" alt="Restaurant" loading="lazy">
-                <div class="car-meta">
-                  <div class="car-name">Restaurant</div>
-                  <div class="car-sub muted">Gastraum & Sanitär</div>
-                </div>
-              </a>
-
-              <a class="car-card" href="services.html#liste" aria-label="Fitness">
-                <img src="assets/img/services/tile-fitness.webp" alt="Fitness" loading="lazy">
-                <div class="car-meta">
-                  <div class="car-name">Fitness</div>
-                  <div class="car-sub muted">Trainingsfläche, Duschen, WC, Sauna</div>
-                </div>
-              </a>
-
-              <a class="car-card" href="services.html#liste" aria-label="Büro">
-                <img src="assets/img/services/tile-office.webp" alt="Büro" loading="lazy">
-                <div class="car-meta">
-                  <div class="car-name">Büro</div>
-                  <div class="car-sub muted">Böden, Sanitär, Müll, Oberflächen</div>
-                </div>
-              </a>
-
-              <a class="car-card" href="services.html#liste" aria-label="Schule">
-                <img src="assets/img/services/tile-school.webp" alt="Schule" loading="lazy">
-                <div class="car-meta">
-                  <div class="car-name">Schule</div>
-                  <div class="car-sub muted">Klassen, Flure, Aula/Sporthalle optional</div>
-                </div>
-              </a>
-
-              <a class="car-card" href="services.html#liste" aria-label="Kindergarten">
-                <img src="assets/img/services/tile-kindergarten.webp" alt="Kindergarten" loading="lazy">
-                <div class="car-meta">
-                  <div class="car-name">Kindergarten</div>
-                  <div class="car-sub muted">Gruppenräume & Sanitär</div>
-                </div>
-              </a>
-
-              <a class="car-card" href="services.html#liste" aria-label="Sozialräume (Halle)">
-                <img src="assets/img/services/tile-production-social.webp" alt="Sozialräume (Halle)" loading="lazy">
-                <div class="car-meta">
-                  <div class="car-name">Sozialräume (Halle)</div>
-                  <div class="car-sub muted">Pausenraum, WC, Büro, Flur</div>
-                </div>
-              </a>
-
-              <a class="car-card" href="services.html#liste" aria-label="Personal-Vertretung">
-                <img src="assets/img/services/tile-pc-laptop-reinigung-wartung.webp" alt="Personal-Vertretung" loading="lazy">
-                <div class="car-meta">
-                  <div class="car-name">Personal-Vertretung</div>
-                  <div class="car-sub muted">Urlaubs- & Krankheitsvertretung</div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="carousel-dots" data-car-dots aria-label="Galerie Punkte"></div>
-        </div>
-
-        <div class="home-cta reveal">
+        <div class="section-heading section-heading--split" data-reveal>
           <div>
-            <h3 class="h3">Bereit für ein sauberes Objekt?</h3>
-            <p class="muted">
-              Kontaktieren Sie uns noch heute für ein unverbindliches Angebot.
-            </p>
+            <p class="eyebrow">Preise mit Marktbezug</p>
+            <h2>Marktorientierte Preisstruktur f&uuml;r Niedersachsen statt verwirrender Fantasiepakete.</h2>
           </div>
-          <div class="home-cta-actions">
-            <a class="btn" href="anfrage.html">Anfrage starten</a>
-            <a class="btn btn-ghost" href="kontakt.html">Kontakt</a>
+          <p>
+            &Ouml;ffentlich einsehbare Vergleichswerte aus Braunschweig und Hannover sowie allgemeine
+            Markt&uuml;bersichten zeigen: Regelm&auml;&szlig;ige Reinigung wird oft stundenweise, fl&auml;chenbezogen
+            oder als Monatsplan kalkuliert. Deshalb kommuniziert DR-service Geb&auml;udereinigung bewusst einfach und ehrlich.
+          </p>
+        </div>
+
+        <div class="price-bands" data-reveal>
+          <article class="price-band">
+            <span class="price-band__eyebrow">St&uuml;ndlich</span>
+            <strong>ab <span data-hourly-from>25 &euro;</span> / Stunde</strong>
+            <p>F&uuml;r planbare Unterhaltsreinigung, kleinere B&uuml;ros, Sozialr&auml;ume, Treppenh&auml;user und Privathaushalte.</p>
+          </article>
+
+          <article class="price-band">
+            <span class="price-band__eyebrow">Tageseinsatz</span>
+            <strong>ab 100 &euro; / 4 Stunden</strong>
+            <p>Als klare Rechenbasis f&uuml;r halbe Tage, Vertretung, intensivere Eins&auml;tze oder kurzfristige Unterst&uuml;tzung.</p>
+          </article>
+
+          <article class="price-band">
+            <span class="price-band__eyebrow">Monatsplan</span>
+            <strong>individuell nach Turnus</strong>
+            <p>Regelm&auml;&szlig;ige Betreuung wird h&auml;ufig als fairer Monatswert geplant, damit Aufwand und Rhythmus sauber zusammenpassen.</p>
+          </article>
+        </div>
+
+        <div class="price-ledger" data-reveal>
+          <div class="price-ledger__head">
+            <span>Objektart</span>
+            <span>Typische Orientierung</span>
+            <span>Basisleistungen</span>
+            <span>Wovon es abh&auml;ngt</span>
           </div>
+
+          <div class="price-ledger__row">
+            <strong>Treppenhaus</strong>
+            <p>ca. 75 bis 200 &euro; / Monat bei 1x w&ouml;chentlich, je nach Etagen und Umfang</p>
+            <p>Treppen, Podeste, Eingangsbereich, Gel&auml;nder, Briefk&auml;sten, Glas innen</p>
+            <p>Etagenzahl, Aufzug, Kellertreppe, Haust&uuml;r, Briefk&auml;sten, M&uuml;llplatz</p>
+          </div>
+
+          <div class="price-ledger__row">
+            <strong>B&uuml;ro / Sozialr&auml;ume</strong>
+            <p>ab 25 &euro; / Stunde oder z. B. ca. 250 bis 500 &euro; / Monat bei rund 200 m&sup2;</p>
+            <p>Arbeitspl&auml;tze, B&ouml;den, Sanit&auml;r, Teek&uuml;che, Oberfl&auml;chen, M&uuml;ll</p>
+            <p>Intervall, Sanit&auml;ranteil, Teppich oder Hartboden, M&ouml;blierung, Schl&uuml;sselzugang</p>
+          </div>
+
+          <div class="price-ledger__row">
+            <strong>Fitness / Gastronomie</strong>
+            <p>meist ab 30 &euro; / Stunde oder als fester Hygieneplan</p>
+            <p>Trainingsfl&auml;chen, Umkleiden, Duschen, WC, Gastraum, sichtbare Fl&auml;chen</p>
+            <p>Sto&szlig;zeiten, Desinfektion, Feuchtbereiche, Ger&auml;teumfeld, Fett- und Geruchsbelastung</p>
+          </div>
+
+          <div class="price-ledger__row">
+            <strong>Schule / Kindergarten</strong>
+            <p>nach Besichtigung und Reinigungsplan</p>
+            <p>Klassen- und Gruppenr&auml;ume, Flure, Sanit&auml;r, B&ouml;den, Spielfl&auml;chen</p>
+            <p>Nutzungszeiten, Hygieneanforderung, Ferienrhythmus, gro&szlig;e Laufwege</p>
+          </div>
+
+          <div class="price-ledger__row">
+            <strong>Privathaushalt</strong>
+            <p>ab 25 &euro; / Stunde bei regelm&auml;&szlig;iger oder abgestimmter Reinigung</p>
+            <p>Wohnr&auml;ume, K&uuml;che, Bad, Oberfl&auml;chen, Saugen, Wischen</p>
+            <p>Wohnungsgr&ouml;&szlig;e, Haustiere, Fenster, W&auml;sche, Material und gew&uuml;nschter Standard</p>
+          </div>
+
+          <div class="price-ledger__row">
+            <strong>Grundreinigung / Vertretung</strong>
+            <p>meist nach Aufwand oder Fl&auml;che, grob 2,50 bis 6,00 &euro; / m&sup2; bei Grundreinigung</p>
+            <p>Intensivreinigung, Erstreinigung, Nachreinigung, Vertretung im bestehenden Plan</p>
+            <p>Zustand des Objekts, kurzfristige Organisation, Sonderzeiten, Zusatzfl&auml;chen</p>
+          </div>
+        </div>
+
+        <div class="pricing-remark" data-reveal>
+          <p>
+            Die endg&uuml;ltige Kalkulation kann bei der Besichtigung abweichen. Je nach Objekt,
+            Laufzeit, Aufwand, geb&uuml;ndelten Eins&auml;tzen, Rabatten oder Verhandlungsspielraum ist
+            ein verbindliches Angebot h&ouml;her oder auch g&uuml;nstiger als die erste Orientierung.
+          </p>
+          <p>
+            Gem&auml;&szlig; &sect; 19 UStG wird keine Umsatzsteuer berechnet und nicht ausgewiesen.
+            Viele &ouml;ffentliche Marktquellen nennen Vergleichswerte netto. DR-service Dawid Rzeszowski rechnet als Kleinunternehmer ohne USt-Ausweis.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--dark">
       <div class="container">
-        <div class="steps reveal">
-          <h2 class="h2">So läuft’s ab</h2>
-
-          <div class="steps-grid">
-            <div class="step">
-              <div class="step-num">1</div>
-              <div class="step-title">Leistung auswählen</div>
-              <div class="muted small">Treppenhaus, Fitness, Büro …</div>
-            </div>
-            <div class="step">
-              <div class="step-num">2</div>
-              <div class="step-title">Kurz die Basisdaten</div>
-              <div class="muted small">m², Mengen, Häufigkeit.</div>
-            </div>
-            <div class="step">
-              <div class="step-num">3</div>
-              <div class="step-title">Wir kommen mit Angebot</div>
-              <div class="muted small">Schnell, klar, ohne Umwege.</div>
-            </div>
-          </div>
-
-          <div class="steps-actions">
-            <a class="btn" href="anfrage.html">Kostenloses Angebot anfordern</a>
-            <a class="btn btn-ghost" href="services.html">Leistungen entdecken</a>
-          </div>
+        <div class="section-heading section-heading--compact" data-reveal>
+          <p class="eyebrow">Wovon der Preis abh&auml;ngt</p>
+          <h2>Keine zwei Objekte sind gleich und genau deshalb ist eine gute Reinigung kein Blindpreis.</h2>
         </div>
+
+        <div class="factors-grid">
+          <article class="factor-item" data-reveal>
+            <h3>Objektart und Fl&auml;che</h3>
+            <p>Treppenhaus, B&uuml;ro, Gastronomie oder Kindergarten haben komplett unterschiedliche Laufwege und Hygienebereiche.</p>
+          </article>
+
+          <article class="factor-item" data-reveal>
+            <h3>Intervall und Uhrzeit</h3>
+            <p>Regelm&auml;&szlig;ige Eins&auml;tze sind effizienter planbar als einmalige oder sehr sp&auml;te Sondertermine.</p>
+          </article>
+
+          <article class="factor-item" data-reveal>
+            <h3>Verschmutzungsgrad</h3>
+            <p>Leicht laufende Unterhaltsreinigung ist anders kalkuliert als stark beanspruchte oder lange nicht gereinigte Bereiche.</p>
+          </article>
+
+          <article class="factor-item" data-reveal>
+            <h3>Sanit&auml;r, K&uuml;che und Desinfektion</h3>
+            <p>Je h&ouml;her der Sanit&auml;r- und Hygieneanteil, desto mehr Zeit, Material und Sorgfalt m&uuml;ssen eingeplant werden.</p>
+          </article>
+
+          <article class="factor-item" data-reveal>
+            <h3>Zugang und Ablauf</h3>
+            <p>Schl&uuml;ssel, Alarm, Aufzug, freie Zug&auml;nge oder st&ouml;rungsfreies Arbeiten wirken sich direkt auf die Wirtschaftlichkeit aus.</p>
+          </article>
+
+          <article class="factor-item" data-reveal>
+            <h3>Zusatzmaterial und Verbrauchsartikel</h3>
+            <p>Auf Wunsch liefern wir nach vorheriger Absprache auch Papierhandt&uuml;cher, Toilettenpapier oder andere Verbrauchsmaterialien mit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="leistungen">
+      <div class="container">
+        <div class="section-heading section-heading--split" data-reveal>
+          <div>
+            <p class="eyebrow">Leistungen</p>
+            <h2>Basisleistungen, Zusatzoptionen und einsatzbereite Reinigung ohne leere Schlagw&ouml;rter.</h2>
+          </div>
+          <p>
+            Der Schwerpunkt liegt auf Objekten, die im Alltag funktionieren m&uuml;ssen:
+            saubere Eing&auml;nge, gepflegte Arbeitspl&auml;tze, hygienische Sanit&auml;rr&auml;ume und eine
+            verl&auml;ssliche Vertretung, wenn der bestehende Plan nicht ausf&auml;llt.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card" data-reveal>
+            <img src="assets/img/services/tile-staircase.webp" alt="Treppenhausreinigung" width="1200" height="800" loading="lazy" decoding="async">
+            <div class="service-card__body">
+              <h3>Treppenhausreinigung</h3>
+              <p>F&uuml;r Wohnanlagen, Mehrfamilienh&auml;user und gewerbliche Treppenh&auml;user.</p>
+              <ul>
+                <li>Treppen, Podeste, Eingangsbereiche</li>
+                <li>Gel&auml;nder, Briefk&auml;sten, Glas innen</li>
+                <li>Optional Haust&uuml;r, Kellergang, M&uuml;llplatz</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <img src="assets/img/services/tile-office.webp" alt="B&uuml;roreinigung" width="1200" height="800" loading="lazy" decoding="async">
+            <div class="service-card__body">
+              <h3>B&uuml;ro und Sozialr&auml;ume</h3>
+              <p>F&uuml;r kleine und mittlere Unternehmen, Praxen, Werkst&auml;tten und Verwaltung.</p>
+              <ul>
+                <li>Arbeitspl&auml;tze, B&ouml;den, Oberfl&auml;chen</li>
+                <li>Sanit&auml;r, Teek&uuml;che, M&uuml;llentsorgung</li>
+                <li>Auch Pausenr&auml;ume und Waschr&auml;ume</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <img src="assets/img/services/tile-fitness.webp" alt="Reinigung f&uuml;r Fitnessstudio" width="1200" height="800" loading="lazy" decoding="async">
+            <div class="service-card__body">
+              <h3>Fitness und stark genutzte Fl&auml;chen</h3>
+              <p>F&uuml;r hohe Frequenz, Ger&auml;tebereiche und sensible Hygienepunkte.</p>
+              <ul>
+                <li>Trainingsfl&auml;chen und Umkleiden</li>
+                <li>Duschen, WC, sichtbare Kontaktfl&auml;chen</li>
+                <li>Auf Wunsch desinfizierende Reinigung</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <img src="assets/img/services/tile-restaurant.webp" alt="Reinigung f&uuml;r Gastronomie" width="1200" height="800" loading="lazy" decoding="async">
+            <div class="service-card__body">
+              <h3>Gastronomie</h3>
+              <p>F&uuml;r Gastraum, Sanit&auml;r und alle Bereiche, die beim ersten Eindruck sichtbar sind.</p>
+              <ul>
+                <li>G&auml;stebereiche und Laufwege</li>
+                <li>Sanit&auml;ranlagen und Oberfl&auml;chen</li>
+                <li>Abgestimmt auf Betriebszeiten</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <img src="assets/img/services/tile-school.webp" alt="Reinigung f&uuml;r Schule" width="1200" height="800" loading="lazy" decoding="async">
+            <div class="service-card__body">
+              <h3>Schulen und Kinderg&auml;rten</h3>
+              <p>F&uuml;r R&auml;ume mit hoher Nutzung und erh&ouml;htem Hygieneanspruch.</p>
+              <ul>
+                <li>Klassen-, Gruppen- und Schlafr&auml;ume</li>
+                <li>Flure, Sanit&auml;r, B&ouml;den, Spielfl&auml;chen</li>
+                <li>Sporthalle oder Aula optional</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <img src="assets/img/services/tile-pc-laptop-reinigung-wartung.webp" alt="Vertretung bei Krankheit oder Urlaub" width="1200" height="800" loading="lazy" decoding="async">
+            <div class="service-card__body">
+              <h3>Vertretung bei Krankheit oder Urlaub</h3>
+              <p>F&uuml;r bestehende Reinigungspl&auml;ne, die kurzfristig weiterlaufen m&uuml;ssen.</p>
+              <ul>
+                <li>Urlaubsvertretung</li>
+                <li>Krankheitsvertretung</li>
+                <li>Unterst&uuml;tzung nach abgesprochenem Plan</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--accent">
+      <div class="container audience-grid">
+        <article class="audience-panel" data-reveal>
+          <p class="eyebrow">Firmenkunden</p>
+          <h2>F&uuml;r Unternehmen, Hausverwaltungen und Objekte mit laufendem Bedarf.</h2>
+          <p>
+            Besonders sinnvoll, wenn Eingangsbereiche, Sanit&auml;rr&auml;ume, Sozialr&auml;ume oder
+            Arbeitsfl&auml;chen kontinuierlich gepflegt wirken sollen und Sie einen verl&auml;sslichen Ansprechpartner wollen.
+          </p>
+          <ul>
+            <li>Regelm&auml;&szlig;ige Unterhaltsreinigung</li>
+            <li>Treppenh&auml;user und Gewerbeobjekte</li>
+            <li>Vertretung im bestehenden Reinigungsplan</li>
+          </ul>
+        </article>
+
+        <article class="audience-panel" data-reveal>
+          <p class="eyebrow">Privatkunden</p>
+          <h2>Auch private Anfragen sind willkommen, wenn gr&uuml;ndliche Hilfe gebraucht wird.</h2>
+          <p>
+            Ob Wohnung, Haus, Grundreinigung oder eine saubere Entlastung im Alltag:
+            DR-service Geb&auml;udereinigung arbeitet ebenso f&uuml;r Privatkunden, wenn der Umfang sauber abgestimmt ist.
+          </p>
+          <ul>
+            <li>Regelm&auml;&szlig;ige Wohnungsreinigung</li>
+            <li>Bad, K&uuml;che, B&ouml;den und Oberfl&auml;chen</li>
+            <li>Zusatzmaterial auf Wunsch nach Absprache</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--light" id="ablauf">
+      <div class="container">
+        <div class="section-heading section-heading--compact" data-reveal>
+          <p class="eyebrow">So l&auml;uft es ab</p>
+          <h2>Kurze Abstimmung, saubere Einsch&auml;tzung, klares Angebot.</h2>
+        </div>
+
+        <div class="process-track">
+          <article class="process-step" data-reveal>
+            <span class="process-step__number">01</span>
+            <h3>Objekt kurz beschreiben</h3>
+            <p>Einfach angeben, was gereinigt werden soll, wie gro&szlig; das Objekt ist und wie oft Bedarf besteht.</p>
+          </article>
+
+          <article class="process-step" data-reveal>
+            <span class="process-step__number">02</span>
+            <h3>R&uuml;cksprache und Einordnung</h3>
+            <p>Wir gleichen Aufwand, Turnus, Zusatzleistungen und Erreichbarkeit ab und ordnen den Preis realistisch ein.</p>
+          </article>
+
+          <article class="process-step" data-reveal>
+            <span class="process-step__number">03</span>
+            <h3>Besichtigung und Angebot</h3>
+            <p>Danach folgt ein verbindliches Angebot, das Rabatte, Verhandlungsspielraum und den echten Objektzustand ber&uuml;cksichtigt.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="vorteile">
+      <div class="container value-layout">
+        <div class="value-layout__copy" data-reveal>
+          <p class="eyebrow">Warum DR-service</p>
+          <h2>Ein regionaler Reinigungsdienst mit Ambition, Struktur und sichtbarem Anspruch.</h2>
+          <p>
+            DR-service Geb&auml;udereinigung will nicht nur sauber machen, sondern dauerhaft Vertrauen aufbauen.
+            Deshalb stehen pers&ouml;nlicher Kontakt, saubere Ausf&uuml;hrung und klare Verantwortung
+            im Mittelpunkt. Das Ziel ist eine Zusammenarbeit, die professionell wirkt und langfristig h&auml;lt.
+          </p>
+        </div>
+
+        <div class="value-list" data-reveal>
+          <article class="value-item">
+            <h3>Pers&ouml;nlicher Ansprechpartner</h3>
+            <p>Keine anonyme Hotline, sondern direkte Abstimmung mit klarer Verantwortung.</p>
+          </article>
+
+          <article class="value-item">
+            <h3>Gr&uuml;ndliche Arbeit statt Massenabfertigung</h3>
+            <p>Sauberkeit soll sichtbar sein und nicht nur formal erledigt wirken.</p>
+          </article>
+
+          <article class="value-item">
+            <h3>Flexibel nach Objekt und Bedarf</h3>
+            <p>Von laufenden Intervallen bis zur Krankheits- oder Urlaubsvertretung.</p>
+          </article>
+
+          <article class="value-item">
+            <h3>Professionelle Kiehl-Produkte</h3>
+            <p>Geeignete Mittel f&uuml;r Oberfl&auml;chen, Sanit&auml;r und sensible Innenbereiche.</p>
+          </article>
+
+          <article class="value-item">
+            <h3>Klare Kommunikation &uuml;ber Leistung und Preis</h3>
+            <p>Verst&auml;ndliche Orientierung, kein Versteckspiel und ehrliche R&uuml;ckmeldung.</p>
+          </article>
+
+          <article class="value-item">
+            <h3>Regional nah, langfristig gedacht</h3>
+            <p>Kurze Wege in Salzgitter und Umgebung sowie der Anspruch, mit jedem Objekt mitzuwachsen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="kontakt">
+      <div class="container contact-layout">
+        <div class="contact-panel" data-reveal>
+          <p class="eyebrow">Anfrage</p>
+          <h2>Einfach schreiben. Der Rest wird sauber abgestimmt.</h2>
+          <p>
+            Das Formular ist bewusst kurz gehalten. F&uuml;r eine schnellere Einordnung gerne im Text
+            Objektart, ungef&auml;hre Fl&auml;che, Einsatzort und gew&uuml;nschtes Intervall mit angeben.
+          </p>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="firstName">Vorname</label>
+                <input id="firstName" name="firstName" type="text" autocomplete="given-name" required>
+              </div>
+
+              <div class="field">
+                <label for="lastName">Nachname</label>
+                <input id="lastName" name="lastName" type="text" autocomplete="family-name" required>
+              </div>
+
+              <div class="field">
+                <label for="company">Firma</label>
+                <input id="company" name="company" type="text" autocomplete="organization">
+              </div>
+
+              <div class="field">
+                <label for="phone">Telefon</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+              </div>
+
+              <div class="field">
+                <label for="email">E-Mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+              </div>
+
+              <div class="field field--full">
+                <label for="message">Nachricht</label>
+                <textarea id="message" name="message" rows="7" placeholder="Zum Beispiel: Treppenhaus in Salzgitter, 4 Etagen, 1x pro Woche. Oder: B&uuml;ro mit ca. 180 m&sup2;, Sanit&auml;r und Teek&uuml;che inklusive." required></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="button button-primary" type="submit">Anfrage per E-Mail vorbereiten</button>
+              <button class="button button-secondary" type="button" id="contact-whatsapp">Anfrage per WhatsApp</button>
+            </div>
+
+            <p class="microcopy">
+              Die endg&uuml;ltige Kalkulation kann nach Besichtigung abweichen. Rabatte, Laufzeiten und
+              Verhandlungen werden bei der finalen Angebotserstellung ber&uuml;cksichtigt.
+            </p>
+          </form>
+        </div>
+
+        <aside class="contact-rail" data-reveal>
+          <div class="contact-rail__card">
+            <h3>DR-service Dawid Rzeszowski</h3>
+            <p>Einzelunternehmen und Inhaber der Marke DR-service Geb&auml;udereinigung.</p>
+            <address>
+              Breslauer Stra&szlig;e 1<br>
+              38239 Salzgitter-Thiede<br>
+              Deutschland
+            </address>
+          </div>
+
+          <div class="contact-rail__card">
+            <h3>Direkter Kontakt</h3>
+            <p><strong>Telefon / WhatsApp</strong><br><a href="tel:+491774615992">+49 177 4615992</a></p>
+            <p><strong>E-Mail</strong><br><a href="mailto:dr.service.de@gmail.com">dr.service.de@gmail.com</a></p>
+            <p><strong>Region</strong><br>Salzgitter, Wolfenb&uuml;ttel, Braunschweig, Helmstedt</p>
+          </div>
+
+          <div class="contact-rail__card">
+            <h3>Gut zu wissen</h3>
+            <ul>
+              <li>Privatkunden und Firmenkunden willkommen</li>
+              <li>Professionelle Kiehl-Produkte im Einsatz</li>
+              <li>Papierhandt&uuml;cher und Toilettenpapier auf Wunsch nach Absprache</li>
+              <li>Krankheits- und Urlaubsvertretung m&ouml;glich</li>
+            </ul>
+          </div>
+        </aside>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-  <div class="container footer-inner footer-grid">
-    <div class="footer-left">
-      <div class="footer-brand">DR Service</div>
-      <div class="muted small">Gebäudereinigung</div>
-    </div>
+    <div class="container footer-layout">
+      <div class="footer-brand">
+        <img class="footer-brand__logo" src="assets/brand/logo.png" alt="DR-service Geb&auml;udereinigung" width="800" height="800">
+        <div>
+          <strong>DR-service Geb&auml;udereinigung</strong>
+          <p>Marke von DR-service Dawid Rzeszowski.</p>
+        </div>
+      </div>
 
-    <div class="footer-counter" aria-label="Besucherzähler">
-      <a href="http://www.counterliczniki.com">Counterliczniki</a>
-      <script type="text/javascript" src="https://www.fastcounter.net/auth.php?id=233624e99397c218da7e045c3d8cd500b94174eb"></script>
-      <script type="text/javascript" src="https://www.fast-counter.net/de/home/counter/1553971/t/0"></script>
-    </div>
+      <nav class="footer-nav" aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
 
-    <div class="footer-links">
-      <a class="footer-link" href="impressum.html">Impressum</a>
-      <a class="footer-link" href="datenschutz.html">Datenschutz</a>
-    </div>
-  </div>
-</footer>
-  <script src="assets/js/navigation.js"></script>
-  <script src="assets/js/animations.js"></script>
-  <script src="assets/js/carousel.js"></script>
+      <div class="footer-counter" aria-label="Besucherzähler">
+        <p class="footer-counter__label">Besucherzähler</p>
+        <div class="footer-counter__embed">
+          <script type="text/javascript" src="https://www.fastcounter.net/auth.php?id=233624e99397c218da7e045c3d8cd500b94174eb"></script>
+          <script type="text/javascript" src="https://www.fast-counter.net/de/home/counter/1553971/t/0"></script>
+        </div>
+        <a class="footer-counter__credit" href="http://www.counterliczniki.com" rel="noopener noreferrer" target="_blank">Counterliczniki</a>
+      </div>
 
-  
+      <div class="footer-note">
+        <p>Hinweis: Kleinunternehmer gem&auml;&szlig; &sect; 19 UStG</p>
+        <p>&copy; <span data-current-year></span> DR-service Dawid Rzeszowski</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
